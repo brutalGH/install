@@ -84,6 +84,7 @@ read -rp "Input ur ns-domain : " -e nsdomen
 echo "$nsdomen" > /etc/xray/nsdomain
 echo "$nsdomen" > /root/nsdomain
 clear
+
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install SSH / WS               $NC"
@@ -95,6 +96,13 @@ sleep 2
 clear
 wget https://raw.githubusercontent.com/brutalGh/ovpn/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 
+#install ssh ovpn
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green      Install Ohp              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/brutalGh/ovpn/main/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 
 #install ssh ovpn
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -168,8 +176,8 @@ rm -f senmenu.sh
 rm -f setupku.sh
 rm -f xraymode.sh
 rm -f slow.sh
-echo "Jangan Takut Gagal, Karena Takut Kegagala Mending Main Boneka" > bacasaya
-echo "YT: @Franata775" > readme
+echo "Jangan Takut Gagal, Kalo takut Mending Main Boneka" > bacasaya
+echo "GH : brutalGH" > readme
 echo "=====================-[ F75.ID ]-===================="
 echo ""
 echo "------------------------------------------------------------"
